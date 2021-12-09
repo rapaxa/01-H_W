@@ -1,13 +1,15 @@
-let operators = {
-    taskOne: (a, b) => {
-        if ((a % 2) == 0) {
-            console.log(a * b);
-        } else {
-            console.log(a + b);
-        }
-        ;
-    },
-    taskTwo: (x, y) => {
+//Первое задание
+function getNumAndCalc(a, b) {
+    if ((a % 2) == 0) {
+      return (a * b);
+    } else {
+        return (a + b);
+    }
+
+}
+
+    //Unit Number 2
+   function getCord (x, y)  {
         if ((x > 0) && (y > 0)) {
             console.log("Лежит в I кординате");
         } else if ((x < 0) && (y < 0)) {
@@ -17,23 +19,27 @@ let operators = {
         } else if ((x < 0) && (y > 0)) {
             console.log("Лежит в IV кординате");
         }
-    },
-    taskThree: (a, b, c) => {
+    };
+//Unit Number 3
+    function sum (a, b, c)  {
         let sum = 0;
         if (a > 0) sum += a;
         if (b > 0) sum += b;
         if (c > 0) sum += c;
-        console.log(sum);
-    },
-    taskFour: (a, b, c) => {
+        return sum;
+    };
+    //Unit number 4
+     function sumMax (a, b, c)  {
         let sum, d, e;
         sum = 0;
         d = a * b * c;
         e = a + b + c;
         sum = Math.max(d, e) + 3;
-        console.log(sum);
-    },
-    taskFive: (rate) => {
+        return sum;
+        }
+
+    //Unit Number 5
+    function getRate (rate)  {
         if ((rate >= 0) && (rate <= 19)) {
             console.log("F");
         } else if ((rate >= 20) && (rate <= 39)) {
@@ -51,4 +57,3 @@ let operators = {
 
         }
     }
-};
